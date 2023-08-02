@@ -59,7 +59,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white shadow-lg">
+    <div className="bg-white shadow-lg" style={{height: 70}}>
       <div className="container align-item-center mt-1">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container">
@@ -122,38 +122,11 @@ const Navbar = () => {
                         className="dropdown-menu show me-5 text-left"
                         style={{ position: "absolute", right: `-5vh` }}
                       >
-                        <Link href="/find_job">
-                          <div className="ms-2">
-                            <FontAwesomeIcon icon={faMagnifyingGlass} />
-                            <button className="btn text-primary fw-bold">
-                              Find Job
-                            </button>
-                          </div>
-                        </Link>
-
                         <Link href="/profile">
                           <div className="ms-2">
                             <FontAwesomeIcon icon={faUser} size="lg" />
                             <button className="btn text-primary fw-bold">
                               Profile
-                            </button>
-                          </div>
-                        </Link>
-
-                        <Link href="/candidate">
-                          <div className="ms-2">
-                            <FontAwesomeIcon icon={faUsersViewfinder} />
-                            <button className="btn text-primary fw-bold">
-                              Candidate
-                            </button>
-                          </div>
-                        </Link>
-
-                        <Link href="/edit_profile">
-                          <div className="ms-2">
-                            <FontAwesomeIcon icon={faUserPen} />
-                            <button className="btn text-primary fw-bold">
-                              Edit Profile
                             </button>
                           </div>
                         </Link>
