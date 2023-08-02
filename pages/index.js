@@ -30,9 +30,7 @@ export default function Home() {
                 Talenta terbaik negri untuk perubahan revolusi 4.0
               </h1>
               <p className="desc me-5 mb-5 ms-5">
-                Dorongan revolusi industri 4.0 mendorong kita untuk
-                mempersiapkan lingkungan kerja yang lebih baik serta sumber daya
-                manusia yang cepat dan tepat.
+                Mencarikan pekerjaan yang sesuai dengan demand Perusahaan.
               </p>
               <Link href="/candidate">
                 <button className="btn btn-primary btn-lg w-50 ms-5 mb-2">
