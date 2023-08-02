@@ -125,4 +125,4 @@ npm run build
 
 :rocket: [`Backend Peworld`](https://github.com/abubakar-adeni/hire_job_be)
 
-:rocket: [`Demo Peworld`](https://hirejob-fe-tqqw.vercel.app/)
+:rocket: [`Demo Peworld`](https://hire-jobv1.vercel.app/)
