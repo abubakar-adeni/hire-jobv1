@@ -632,7 +632,7 @@ function Edit_profile() {
                           style={{ fontSize: `12px` }}
                           onClick={() => handleDeleteSkill(key)}
                         >
-                          {isLoading ? "Menghapus" : "Hapus"}
+                          {isLoading ? "X" : "X"}
                         </button>
                       </span>
                     ))}
