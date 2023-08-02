@@ -59,7 +59,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
     <td> <img width="350px" src="./documentation/otheruser.jpg" border="0"  alt="otheruser" /></td>
 </tr>
 <td><img width="350px" src="./documentation/editProfile.jpg" border="0" alt="editprofile" /></td>
-    <td> <img width="350px" src="./documentation/findJob.jpg" border="0"  alt="findjob" /></td>
+
 </tr>
 </table>
 
