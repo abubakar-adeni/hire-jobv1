@@ -16,8 +16,7 @@ import {
 function Job_list(props) {
   const router = useRouter();
   const [showDropdown, setShowDropdown] = useState(false);
-  const [sortOption, setSortOption] = useState("Sort");
-  const sortOptions = ["Nama", "Skill", "Lokasi"];
+
   const dispatch = useDispatch();
   // this will be used when using api per pages
   // const [pageStart, setPageStart] = useState(0);
@@ -44,32 +43,6 @@ function Job_list(props) {
     setSearchText(event.target.value);
   };
 
-  const handleSortOptionClick = (option) => {
-    setSortOption(option);
-    setShowDropdown(false);
-
-    // Filter the data based on the selected option and search text
-    let sortedData = [];
-    if (option === "Nama") {
-      sortedData = data.filter(
-        (item) =>
-          item.fullname.toLowerCase().includes(searchText.toLowerCase()) &&
-          item.id !== user?.id
-      );
-      // Update the filtered data
-      setFilteredData(sortedData);
-    } else if (option === "Skill") {
-      sortedData = data.filter((item) =>
-        item.skills.some(
-          (skill) =>
-            skill.toLowerCase().includes(searchText.toLowerCase()) &&
-            item.id !== user?.id
-        )
-      );
-      // Update the filtered data
-      setFilteredData(sortedData);
-    }
-  };
   const itemsPerPage = 5;
 
   const profiles = filteredData
@@ -145,7 +118,7 @@ function Job_list(props) {
       <Navbar />
       <nav className="navbar navbar-expand-lg navbar-primary bg-primary">
         <div className="container">
-          <a className="navbar-brand fs-4 text-light fw-bold ms-3">Candidate</a>
+          <a className="navbar-brand fs-4 text-light fw-bold ms-3">Kandidat</a>
         </div>
       </nav>
       <div className="container ">
@@ -167,38 +140,6 @@ function Job_list(props) {
                 ></div>
 
                 <div className="btn-group ms-2 me-2">
-                  <button
-                    className="btn btn-outline-primary dropdown-toggle"
-                    type="button"
-                    onClick={() => setShowDropdown(!showDropdown)}
-                  >
-                    {sortOption}
-                  </button>
-
-                  {showDropdown && (
-                    <div className="dropdown-menu show">
-                      {sortOptions.map((option, index) => (
-                        <div key={index}>
-                          <a
-                            className="dropdown-item"
-                            href="#"
-                            onClick={() => handleSortOptionClick(option)}
-                          >
-                            {option}
-                          </a>
-                        </div>
-                      ))}
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => {
-                          setShowDropdown(false);
-                        }}
-                      >
-                        Close
-                      </a>
-                    </div>
-                  )}
                 </div>
                 <button
                   className="btn btn-primary "
