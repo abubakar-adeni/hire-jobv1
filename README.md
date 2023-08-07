@@ -108,7 +108,7 @@ npm run build
   </tr>
    <tr>
     <td>Edit Profile Page</td>
-    <td>Hire</td>
+    <td>Hire Page</td>
   </tr>
   <tr>
     <td><img width="350px" src="./documentation/top_job.png" border="0" alt="Search" /></td>
